@@ -1,5 +1,5 @@
 Feature: As a User , I want to use google translate so that I can translate a text to a different language
-
+@SmokeTest
 Scenario: translate a single word 
 Given On Google translate page
 When I choose source language
