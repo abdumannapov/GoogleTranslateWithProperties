@@ -3,37 +3,33 @@
   <groupId>com.tranlate.google</groupId>
   <artifactId>GoogleTranslateWithProperties</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  	<properties>
+	
+	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-  <dependencies>
-  <dependency>
+	
+
+	<dependencies>
+		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-java</artifactId>
 			<version>1.2.5</version>
 		</dependency>
-		
-<dependency>
-    <groupId>info.cukes</groupId>
-    <artifactId>cucumber-java</artifactId>
-    <version>1.2.5</version>
-</dependency>
-		
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-junit</artifactId>
 			<version>1.2.5</version>
 			<scope>test</scope>
-			</dependency>
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>3.4.0</version>
-</dependency>
-  
-  </dependencies>
-  <build>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -47,10 +43,13 @@
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
 					<includes>
-						<include>**/*CukesRunner.java</include>
+						<include>**/*CukeRunner.java</include>
 					</includes>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+	
+
+
 </project>
